@@ -10,6 +10,8 @@
 + 配置scp传输免登录
 + 通过scp传输文件, 在脚本文件中添加
   + scp your_file root@IP:save_path
++ 设置备份信息
+  echo `date +"%Y-%m-%d %H:%M:%S"` Backup_Complete! >> your_log file 
 + 设置定时任务
   + crontab -e 进入编辑模式
   + 0   12   *   *   *   /bin/sh  your .sh file path  
